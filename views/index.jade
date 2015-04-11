@@ -1,0 +1,248 @@
+extends layout
+
+block content
+  // Your site
+  .container-fluid
+    .row
+      .col-lg-12
+        .navbar.navbar-default
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='javascript:void(0)') Helix
+          .navbar-collapse.collapse.navbar-responsive-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='javascript:void(0)') Active
+              li
+                a(href='javascript:void(0)') Link
+              li.dropdown
+                a.dropdown-toggle(href='bootstrap-elements.html', data-target='#', data-toggle='dropdown')
+                  | Dropdown 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='javascript:void(0)') Action
+                  li
+                    a(href='javascript:void(0)') Another action
+                  li
+                    a(href='javascript:void(0)') Something else here
+                  li.divider
+                  li.dropdown-header Dropdown header
+                  li
+                    a(href='javascript:void(0)') Separated link
+                  li
+                    a(href='javascript:void(0)') One more separated link
+            form.navbar-form.navbar-left
+              input.form-control.col-lg-8(type='text', placeholder='Search')
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='javascript:void(0)') Link
+              li.dropdown
+                a.dropdown-toggle(href='bootstrap-elements.html', data-target='#', data-toggle='dropdown')
+                  | Dropdown 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='javascript:void(0)') Action
+                  li
+                    a(href='javascript:void(0)') Another action
+                  li
+                    a(href='javascript:void(0)') Something else here
+                  li.divider
+                  li
+                    a(href='javascript:void(0)') Separated link
+      .col-lg-12
+        .jumbotron
+            h1 Jumbotron
+            p
+              | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+            p
+              a.btn.btn-primary.btn-lg Learn more
+    .col-lg-6.well  
+      form.form-horizontal
+        fieldset
+          legend Legend
+          .form-group
+            label.col-lg-2.control-label(for='inputEmail') Email
+            .col-lg-10
+              input#inputEmail.form-control(type='email', placeholder='Email')
+          .form-group
+            label.col-lg-2.control-label(for='inputPassword') Password
+            .col-lg-10
+              input#inputPassword.form-control(type='password', placeholder='Password')
+              .checkbox
+                label
+                  input(type='checkbox')
+                  |  Checkbox
+              br
+              .togglebutton
+                label
+                  input(type='checkbox', checked='')
+                  |  Toggle button
+          .form-group
+            label.col-lg-2.control-label(for='inputFile') File
+            .col-lg-10
+              input.form-control.floating-label(type='text', readonly='', placeholder='Browse...')
+              input#inputFile(type='file', multiple='')
+          .form-group
+            label.col-lg-2.control-label(for='textArea') Textarea
+            .col-lg-10
+              textarea#textArea.form-control(rows='3')
+              span.help-block
+                | A longer block of help text that breaks onto a new line and may extend beyond one line.
+          .form-group
+            label.col-lg-2.control-label Radios
+            .col-lg-10
+              .radio.radio-primary
+                label
+                  input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                  |                         Option one is this
+              .radio.radio-primary
+                label
+                  input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                  |                         Option two can be something else
+          .form-group
+            label.col-lg-2.control-label(for='select') Selects
+            .col-lg-10
+              select#select.form-control
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+              br
+              select.form-control(multiple='')
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+          .form-group
+            .col-lg-10.col-lg-offset-2
+              button.btn.btn-default Cancel
+              button.btn.btn-primary(type='submit') Submit
+    .col-md-5.col-md-offset-1
+      .form-group
+        input#focusedInput.form-control.floating-label(type='text', placeholder='Write something to make the label float')
+      .form-group
+        input#focusedInput.form-control.floating-label(type='text', placeholder='Focus to show the hint', data-hint='You should really write something here !')
+      .form-group
+        label.control-label(for='disabledInput') Disabled input
+        input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
+      .form-group.has-warning
+        label.control-label(for='inputWarning') Input warning
+        input#inputWarning.form-control(type='text')
+      .form-group.has-error
+        label.control-label(for='inputError') Input error
+        input#inputError.form-control(type='text')
+      .form-group.has-success
+        label.control-label(for='inputSuccess') Input success
+        input#inputSuccess.form-control(type='text')
+      .form-group
+        label.control-label(for='inputLarge') Large input
+        input#inputLarge.form-control.input-lg(type='text')
+      .form-group
+        label.control-label(for='inputDefault') Default input
+        input#inputDefault.form-control(type='text')
+      .form-group
+        label.control-label(for='inputSmall') Small input
+        input#inputSmall.form-control.input-sm(type='text')
+      .form-group
+        label.control-label Input addons
+        .input-group
+          span.input-group-addon $
+          input.form-control(type='text')
+          span.input-group-btn
+          button.btn.btn-primary(type='button') Button
+    .row
+      .col-lg-10.col-lg-offset-1
+        table.table.table-striped.table-hover
+          thead
+            tr
+              th #
+              th Column heading
+              th Column heading
+              th Column heading
+          tbody
+            tr
+              td 1
+              td Column content
+              td Column content
+              td Column content
+            tr
+              td 2
+              td Column content
+              td Column content
+              td Column content
+            tr.info
+              td 3
+              td Column content
+              td Column content
+              td Column content
+            tr.success
+              td 4
+              td Column content
+              td Column content
+              td Column content
+            tr.danger
+              td 5
+              td Column content
+              td Column content
+              td Column content
+            tr.warning
+              td 6
+              td Column content
+              td Column content
+              td Column content
+            tr.active
+              td 7
+              td Column content
+              td Column content
+              td Column content
+      .col-lg-10.col-lg-offset-1
+        .page-header
+          h1#progress Progress bars
+        h3#progress-basic Basic
+        .bs-component
+          .progress
+            .progress-bar(style='width: 60%;')
+        h3#progress-alternatives Contextual alternatives
+        .bs-component
+          .progress
+            .progress-bar.progress-bar-info(style='width: 20%')
+          .progress
+            .progress-bar.progress-bar-success(style='width: 40%')
+          .progress
+            .progress-bar.progress-bar-warning(style='width: 60%')
+          .progress
+            .progress-bar.progress-bar-danger(style='width: 80%')
+        h3#progress-striped Striped
+        .bs-component
+          .progress.progress-striped
+            .progress-bar.progress-bar-info(style='width: 20%')
+          .progress.progress-striped
+            .progress-bar.progress-bar-success(style='width: 40%')
+          .progress.progress-striped
+            .progress-bar.progress-bar-warning(style='width: 60%')
+          .progress.progress-striped
+            .progress-bar.progress-bar-danger(style='width: 80%')
+          #source-button.btn.btn-primary.btn-xs(style='display: none;') < >
+        h3#progress-animated Animated
+        .bs-component
+          .progress.progress-striped.active
+            .progress-bar(style='width: 45%')
+        h3#progress-stacked Stacked
+        .bs-component
+          .progress
+            .progress-bar.progress-bar-success(style='width: 35%')
+            .progress-bar.progress-bar-warning(style='width: 20%')
+            .progress-bar.progress-bar-danger(style='width: 10%')
+
+  // Your site ends
+  script(src='/js/jquery-1.11.2.min.js')
+  script(src='/js/bootstrap.min.js')
+  script(src='/js/ripples.min.js')
+  script(src='/js/material.min.js')
